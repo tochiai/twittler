@@ -1,6 +1,5 @@
 $(document).ready(function(){
   var $body = $('body');
-  $body.html('<h1>Twittler</h1>');
   var streamLength = 15;
   setInterval(function() {
     $(".tweet").remove();
@@ -11,7 +10,7 @@ $(document).ready(function(){
       var $tweet_author = $('<div class="tweet-author"></div>');
       var $tweet_content = $('<div class="tweet-content"></div>');
       var $tweet_timestamp = $('<div class="tweet-timestamp"></div>');
-      $tweet_author.text('@' + tweet.user)
+      $tweet_author.text('@' + tweet.user);
       $tweet_content.text(tweet.message );
       $tweet_timestamp.text(tweet.created_at);
       $tweet.append($tweet_author, $tweet_content, $tweet_timestamp);
