@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var $body = $('body');
+  var $tweet_container = $('.tweet-container');
   var streamLength = 15;
   setInterval(function() {
     $(".tweet").remove();
@@ -14,7 +15,7 @@ $(document).ready(function(){
       $tweet_content.text(tweet.message );
       $tweet_timestamp.text(tweet.created_at);
       $tweet.append($tweet_author, $tweet_content, $tweet_timestamp);
-      $tweet.appendTo($body);
+      $tweet.appendTo($tweet_container);
       index -= 1;
     }
   }, 300);
