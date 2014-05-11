@@ -1,4 +1,7 @@
+body {
+	font-family: Avenir, Helvetica, Arial, sans-serif
+}
 .tweet {
-	border: 2px solid #ccc;
-	margin-bottom: -2px
+	border: 1px solid #ccc;
+	margin-bottom: -1px
 }
