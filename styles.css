@@ -1,6 +1,11 @@
 body {
 	font-family: Avenir, Helvetica, Arial, sans-serif
 }
+h1 {
+	text-align: center;
+	color: rgb(119, 157, 255);
+	font-weight: 200;
+}
 .tweet, .tweet-header {
 	border: 1px solid #ccc;
 	margin-bottom: -1px
