@@ -1,12 +1,31 @@
 body {
-	font-family: Avenir, Helvetica, Arial, sans-serif
-}
-h1 {
-	text-align: center;
-	color: rgb(119, 157, 255);
-	font-weight: 200;
-}
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	background: rgb(127, 146, 155);}
 .tweet, .tweet-header {
-	border: 1px solid #ccc;
-	margin-bottom: -1px
+	background: rgba(245, 252, 255, 0.92);
+	border: 1px solid rgb(119, 157, 255);
+	border-bottom-width: 0;
+	border-right-width: 0;
+	border-left-width: 0;
+	font-size: 14px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	color: rgb(4, 21, 66);
+	font-weight: 100;
+}
+.tweet-header {
+	text-align: center;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	text-align: center;  
+	color: rgb(200, 220, 233);
+	font-weight: 200;
+	background: rgb(119, 157, 255);
+	font-size: 30px;
+	border-bottom-width: 1px;
+}
+.tweet:hover {
+	background:white;
 }
