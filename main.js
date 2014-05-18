@@ -18,7 +18,7 @@ $(document).ready(function(){
       $currentTweet = $currentTweet.next();
     }
   };
-  var initialLength = Math.min(streamLength, streams.home.length)
+  var initialLength = Math.min(streamLength, streams.home.length);
   for (var i = 0; i < initialLength; i++) {
     $tweet_container.append("<div class='tweet'></div>");
   }
@@ -26,5 +26,5 @@ $(document).ready(function(){
   setInterval(function() {
     $(".tweet").children().remove();
     updateTweets();
-  }, 300);
+  }, 100);
 });
